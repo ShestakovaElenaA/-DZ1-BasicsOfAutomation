@@ -1,12 +1,12 @@
 package ru.netology.service;
 
-import org.testng.annotations.Test;
+import org.junit.Test;
 
-import static org.testng.Assert.assertEquals;
+import static org.junit.Assert.assertEquals;
 
 public class CashbackHackServiceTest {
     @Test
-    void shoudCalculateBuyInAdditionifequal() {
+    public void shoudCalculateBuyInAdditionifequal() {
         CashbackHackService service = new CashbackHackService();
 
         int expected = 500;
@@ -15,7 +15,7 @@ public class CashbackHackServiceTest {
         assertEquals(expected, actual);
     }
     @Test
-    void shoudCalculateBuyInAdditioniflessby1() {
+    public void shoudCalculateBuyInAdditioniflessby1() {
         CashbackHackService service = new CashbackHackService();
 
         int expected = 1;
@@ -24,7 +24,7 @@ public class CashbackHackServiceTest {
         assertEquals(expected, actual);
     }
     @Test
-    void shoudCalculateBuyInAdditioniflessby2() {
+    public void shoudCalculateBuyInAdditioniflessby2() {
         CashbackHackService service = new CashbackHackService();
 
         int expected = 2;
@@ -33,7 +33,7 @@ public class CashbackHackServiceTest {
         assertEquals(expected, actual);
     }
     @Test
-    void shoudCalculateBuyInAdditionifequalboundary() {
+    public void shoudCalculateBuyInAdditionifequalboundary() {
         CashbackHackService service = new CashbackHackService();
 
         int expected = 0;
@@ -42,7 +42,7 @@ public class CashbackHackServiceTest {
         assertEquals(expected, actual);
     }
     @Test
-    void shoudCalculateBuyInAdditionifmoreby1() {
+    public void shoudCalculateBuyInAdditionifmoreby1() {
         CashbackHackService service = new CashbackHackService();
 
         int expected = 999;
@@ -51,7 +51,7 @@ public class CashbackHackServiceTest {
         assertEquals(expected, actual);
     }
     @Test
-    void shoudCalculateBuyInAdditionifmoreby2() {
+    public void shoudCalculateBuyInAdditionifmoreby2() {
         CashbackHackService service = new CashbackHackService();
 
         int expected = 998;
@@ -60,7 +60,7 @@ public class CashbackHackServiceTest {
         assertEquals(expected, actual);
     }
     @Test
-    void shoudCalculateBuyInAdditionifamount0() {
+    public void shoudCalculateBuyInAdditionifamount0() {
         CashbackHackService service = new CashbackHackService();
 
         int expected = 1000;
